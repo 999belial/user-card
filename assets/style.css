@@ -3,9 +3,11 @@
   margin: 0;
   padding: 0;
 }
-
+.conteiner {
+  display: flex;
+}
 .userCard {
-  max-width: 300px;
+  max-width: 292px;
   width: 100%;
   min-width: 250px;
   margin: 20px auto;
@@ -14,8 +16,12 @@
   -webkit-box-shadow: 10px 23px 25px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 23px 25px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 23px 25px 0px rgba(0, 0, 0, 0.75);
-  overflow: hidden;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
 }
 
 img {
@@ -51,6 +57,7 @@ body {
 
 .it {
   padding: 17px;
+  color: rgb(41, 41, 41);
 }
 
 .hour {
@@ -78,7 +85,7 @@ body {
   border: 1px rgb(33, 149, 149) solid;
   border-radius: 5px;
   padding: 10px 45px;
-  margin-bottom: 5px;
+  margin-bottom: -5px;
 }
 
 .make {
@@ -88,11 +95,11 @@ body {
   border: none;
   border-radius: 5px;
   padding: 10px 30px;
-  margin: 5px;
 }
 
 h3 {
   padding-top: 20px;
+  color: rgb(41, 41, 41);
 }
 
 .fa-location-dot {
