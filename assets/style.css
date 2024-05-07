@@ -4,8 +4,19 @@
   padding: 0;
 }
 .conteiner {
-  display: flex;
+  display: inline-flex;
+  margin-left: 450px;
+  padding-top: 90px;
+  z-index: 2;
+  position: relative;
 }
+.conteiner_user {
+  display: inline-flex;
+  margin-left: 50px;
+  z-index: 2;
+  position: relative;
+}
+
 .userCard {
   max-width: 292px;
   width: 100%;
@@ -32,31 +43,43 @@ img {
 }
 
 .info {
-  border: 1px red solid;
-  background-color: rgb(135, 135, 135);
+  background-color: rgb(233, 233, 233);
   height: 400px;
 }
 body {
-  background-color: rgb(219, 218, 218);
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
-.bg {
+.user {
   background-color: rgb(255, 255, 255);
+  background-position: center;
+  width: 292px;
   height: 220px;
   padding: 20px;
   text-align: center;
 }
-.fa-star {
-  color: yellow;
-  display: flex;
+
+.bg {
   position: absolute;
-  bottom: 555px;
-  right: 565px;
+  z-index: 1;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  filter: blur(6px);
+  background: url(/assets/img/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.fastar {
+  color: rgb(203, 203, 203);
+  display: flex;
+  justify-content: center;
 }
 
 .it {
-  padding: 17px;
+  padding: 15px;
   color: rgb(41, 41, 41);
 }
 
@@ -74,15 +97,16 @@ body {
 }
 
 .infovlad {
-  font-size: 15px;
+  font-size: 13px;
   color: rgb(135, 135, 135);
   padding: 10px;
+  font-weight: 600;
 }
 .viev {
   background-color: aliceblue;
-  color: rgb(33, 149, 149);
-  font-weight: 700;
-  border: 1px rgb(33, 149, 149) solid;
+  color: rgb(37, 77, 179);
+  font-weight: 800;
+  border: 1px rgb(37, 77, 179) solid;
   border-radius: 5px;
   padding: 10px 45px;
   margin-bottom: -5px;
@@ -91,10 +115,10 @@ body {
 .make {
   background-color: rgb(37, 77, 179);
   color: rgb(195, 221, 221);
-  font-weight: 700;
+  font-weight: 800;
   border: none;
   border-radius: 5px;
-  padding: 10px 30px;
+  padding: 11px 30px;
 }
 
 h3 {
@@ -107,7 +131,7 @@ h3 {
   display: inline;
 }
 
-.fa-earth-americas {
+.earth1 {
   color: rgb(17, 117, 17);
   display: inline;
   font-size: 12px;
@@ -116,4 +140,15 @@ h3 {
   color: rgb(135, 135, 135);
   font-size: 13px;
   display: inline;
+}
+.earth {
+  color: grey;
+  display: inline;
+  font-size: 12px;
+}
+
+.fastar1 {
+  color: rgb(237, 204, 42);
+  display: flex;
+  justify-content: center;
 }
