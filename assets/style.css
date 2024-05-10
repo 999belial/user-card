@@ -1,80 +1,87 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
-}
-.conteiner {
-  display: flex;
-  z-index: 2;
-  position: relative;
-}
-.conteiner_user {
-  display: flex;
-  z-index: 2;
-  position: relative;
+  margin: 0;
 }
 
-.userCard {
-  max-width: 292px;
-  width: 100%;
-  min-width: 250px;
-  margin: 20px auto;
-  background-color: rgb(232, 232, 232);
-  border-radius: 20px;
-  -webkit-box-shadow: 10px 23px 25px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 23px 25px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 23px 25px 0px rgba(0, 0, 0, 0.75);
-  text-align: center;
+body {
+  font-size: 16px;
+  background-image: url(./img/bg.jpg);
+}
+
+.flex-parents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-child1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 15.625em;
+  height: 31.25em;
+  text-align: center;
+  border-radius: 1.25em;
+  -webkit-box-shadow: 14px 16px 20px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 16px 20px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 16px 20px -1px rgba(0, 0, 0, 0.75);
+}
+
+.flex-child2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15.625em;
+  height: 31.25em;
+  text-align: center;
+  border-radius: 1.25em;
+  -webkit-box-shadow: 14px 16px 20px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 16px 20px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 16px 20px -1px rgba(0, 0, 0, 0.75);
+  margin-left: 2.5em;
+}
+
+.userCard {
+  border-radius: 1.25em;
+  background-color: aliceblue;
+}
+
+.infovlad {
+  margin: 0.4em;
   overflow: hidden;
+  max-height: 4.8em;
 }
 
-img {
-  width: 100px;
-  border-radius: 50%;
-  display: inline-flex;
-  position: relative;
-}
-
-.info {
-  background-color: rgb(233, 233, 233);
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
+.infotimof {
+  margin: 0.4em;
+  overflow: hidden;
+  max-height: 4.8em;
 }
 
 .user {
-  background-color: rgb(255, 255, 255);
-  background-position: center;
-  width: 292px;
   height: 220px;
-  padding: 20px;
-  text-align: center;
+  margin-top: em;
 }
 
-.bg {
-  position: absolute;
-  z-index: 1;
-  left: -10px;
-  top: -10px;
-  right: -10px;
-  bottom: -10px;
-  filter: blur(6px);
-  background: url(/assets/img/bg.jpg) no-repeat center;
-  background-size: cover;
+img {
+  width: 1oopx;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 1em;
 }
 
 .fastar {
-  color: rgb(203, 203, 203);
+  color: rgb(109, 109, 109);
   display: flex;
   justify-content: center;
 }
 
 .it {
-  padding: 15px;
+  padding: 0.93em;
   color: rgb(41, 41, 41);
 }
 
@@ -85,19 +92,11 @@ body {
 
 .loc {
   display: inline-flex;
-  font-size: 15px;
+  font-size: 0.93em;
   color: rgb(135, 135, 135);
-  padding-top: 10px;
+  padding-top: 0.625em;
   font-weight: 500;
-}
-
-.infovlad {
-  font-size: 13px;
-  color: rgb(135, 135, 135);
-  padding: 10px;
-  font-weight: 600;
-  max-height: 76px;
-  overflow: hidden;
+  margin-bottom: 0.625em;
 }
 
 .viev {
@@ -105,22 +104,22 @@ body {
   color: rgb(37, 77, 179);
   font-weight: 800;
   border: 1px rgb(37, 77, 179) solid;
-  border-radius: 5px;
+  border-radius: 0.313em;
   padding: 10px 45px;
-  margin-bottom: -5px;
 }
 
 .make {
   background-color: rgb(37, 77, 179);
-  color: rgb(195, 221, 221);
+  color: rgb(196, 229, 229);
   font-weight: 800;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.313em;
   padding: 11px 30px;
+  margin-top: 0.625em;
 }
 
 h3 {
-  padding-top: 20px;
+  padding-top: 1.25em;
   color: rgb(41, 41, 41);
 }
 
@@ -132,21 +131,26 @@ h3 {
 .earth1 {
   color: rgb(17, 117, 17);
   display: inline;
-  font-size: 12px;
+  font-size: 0.75em;
 }
 .status {
   color: rgb(135, 135, 135);
-  font-size: 13px;
+  font-size: 0.813em;
   display: inline;
 }
 .earth {
   color: grey;
   display: inline;
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 .fastar1 {
   color: rgb(237, 204, 42);
   display: flex;
   justify-content: center;
+}
+
+button1 {
+  display: flex;
+  flex-direction: column;
 }
