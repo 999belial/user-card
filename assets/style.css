@@ -4,15 +4,12 @@
   padding: 0;
 }
 .conteiner {
-  display: inline-flex;
-  margin-left: 450px;
-  padding-top: 90px;
+  display: flex;
   z-index: 2;
   position: relative;
 }
 .conteiner_user {
-  display: inline-flex;
-  margin-left: 50px;
+  display: flex;
   z-index: 2;
   position: relative;
 }
@@ -30,7 +27,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   overflow: hidden;
 }
@@ -38,13 +34,12 @@
 img {
   width: 100px;
   border-radius: 50%;
-  display: inline-block;
+  display: inline-flex;
   position: relative;
 }
 
 .info {
   background-color: rgb(233, 233, 233);
-  height: 400px;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -89,7 +84,7 @@ body {
 }
 
 .loc {
-  display: inline-block;
+  display: inline-flex;
   font-size: 15px;
   color: rgb(135, 135, 135);
   padding-top: 10px;
@@ -101,7 +96,10 @@ body {
   color: rgb(135, 135, 135);
   padding: 10px;
   font-weight: 600;
+  max-height: 76px;
+  overflow: hidden;
 }
+
 .viev {
   background-color: aliceblue;
   color: rgb(37, 77, 179);
